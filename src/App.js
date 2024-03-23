@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Players from './players';
+import PlayersList from "./playerlist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+        <h1>Player's Cards</h1>
       </header>
+      <section className="playersection">
+        <PlayersList />
+      </section>
+      <footer className="footer">
+        <p>© 2024. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
